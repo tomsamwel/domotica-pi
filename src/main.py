@@ -34,10 +34,14 @@ def get_climate_action(temp):
     if (temp > highest_temp):
         # actie ondernemen om te koelen
         action = "koelen"
+        sense.clear(0, 255, 0)
     elif(temp < lowest_temp):
         # actie ondernemen om te verwarmen
         action = "verwarmen"
-    # Todo: als de verwarming of verkoeling uit moet, dan moet hier een else komen
+        sense.clear(255, 0, 0)
+    else:
+        # Todo: als de verwarming of verkoeling uit moet, dan moet hier een else komen
+        sense.clear(255, 255, 255)
     return (action)
 
 sense = SenseHat()
