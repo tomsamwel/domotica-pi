@@ -46,7 +46,7 @@ def get_climate_action(temp):
 
 sense = SenseHat()
 
-print("--- KLIMAATCONTROLE ---")
+print("--- TEMPERATUUR ---")
 print("Gewenste tempereratuur: %d C" % desired_temp)
 print("Verwarmen bij: %d C" % lowest_temp)
 print("Koelen bij: %d C" % highest_temp)
