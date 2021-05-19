@@ -1,0 +1,5 @@
+._src
+.idea/
+__pycache__/
+main.pyc
+ssh.pyc
