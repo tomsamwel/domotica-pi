@@ -1,4 +1,5 @@
 from sense_hat import SenseHat
 sense = SenseHat()
-sense.clear()
-
+def clear_pi():
+    sense.clear()
+clear_pi();
