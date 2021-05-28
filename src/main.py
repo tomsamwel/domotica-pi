@@ -140,7 +140,7 @@ while True:
     h = sense.get_humidity()
     p = sense.get_pressure()
 
-    # dit zorgt er hopelijk voor dat de temperatuur een soort van klopt
+    # de temperatuur corrigeren naar een accuratere vorm
     t = (t1 + t2) / 2
     t_corr = t - ((t_cpu - t) / 1.5)
     t_corr = get_smooth(t_corr)
