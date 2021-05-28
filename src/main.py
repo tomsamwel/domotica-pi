@@ -49,8 +49,8 @@ try:
     # Poging tot het maken van een verbinding met de database
     database = mysql.connector.connect(
         host=hostname,
-        user="root",
-        password="root"
+        user="pi",
+        password="raspberry"
     )
     cursor = database.cursor()
 except:
